@@ -30,21 +30,27 @@ for Rain in Precipitation_Data:
         else:
             total_precipitation_monthly[month] = Rain["value"]
 
-print(total_precipitation_monthly)                
-                #In the Functions above I have calculated the precipitation per month in SeattlI have done this by splitting ->
-                #the date so that we can filter along the value of month. Using teh splitted date we then used the if month functions ->
-                #and then computed along the months for the values and printed the outcome.
-            
-#                 if month == "01":
-#                     print(month)
-            
-            
-#             # total_precipitation_monthly = {}
-#             #for Value in Rain: 
-#                     if "01" in total_precipitation_monthly:
-#                         total_precipitation_monthly["01"] +=Rain["value"]
-#                     else:
-#                         total_precipitation_monthly["01"] = Rain["value"]
+#                 #In the Functions above I have calculated the precipitation per month in SeattlI have done this by splitting ->
+#                 #the date so that we can filter along the value of month. Using teh splitted date we then used the if month functions ->
+#                 #and then computed along the months for the values and printed the outcome.
+#  Part .2
+
+        jaar = Datum_Day[0]
+        print(jaar)
+
+        if jaar in total_precipitation_monthly:
+            total_precipitation_monthly [jaar] +=Rain["value"]
+        else:
+            total_precipitation_monthly[jaar] = Rain["value"]
+
+print(total_precipitation_monthly)
+
+# this was the calculation for the yearly precipitation, done by using the splitted dates from the monthly calculations.
+
+#         total = Datum_Day[2]
+#         total >= "01"
+#         #calculating for the yearly precipitation, taking what is equal to or more than 01 in months as a total.
 
 
-
+# print(total_precipitation_monthly)   
+# print(total)             
