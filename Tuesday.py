@@ -2,8 +2,7 @@ import json
 
 with open ('precipitation.json') as file:
     Precipitation = 'precipitation.json' 
-    
+#I opened the Json file and renamed it to the Precipitation variable 
 
-
-total_monthly_precipitation = Precipitation["Station"] * Precipitation["Location"]
-print(total_monthly_precipitation)
+with open('stations.csv') as file:
+    Stations = 'stations.csv'
